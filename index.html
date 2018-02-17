@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Resturant</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Resturant</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#chef">Chef</a></li>
+        <li><a href="#Menu">Menu</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img1r.jpg" alt="Image" width="100%" height="100%">     
+      </div>
+
+      <div class="item">
+        <img src="img2r.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3>Bringing out the true flavours of Indian and Chinese cuisine</h3>
+        </div>      
+      </div>
+      <div class="item">
+        <img src="img3r.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3>More Sell $</h3>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+  
+<div class="container text-center" id="Services" style="margin-top: 5%;">    
+  <h3 style="font-weight: bold;font-size: 2.5em;">Services</h3><br>
+  <div class="row" style="margin-top: 3%;">
+    <div class="col-sm-6">
+      <img src="hotel.jpg" class="img-responsive img-circle" width="100%" height="100%" alt="Image">
+      <p>Book Hotel</p>
+    </div>
+    <div class="col-sm-6"> 
+      <img src="chef.jpg" class="img-responsive img-circle" width="100%" height="100%" alt="Image">
+      <p>Wanted Chef</p>    
+    </div>
+  </div>
+</div><br>
+
+
+<div class="container text-center" id="Menu" style="margin-top: 5%;">    
+  <h3 style="font-weight: bold;font-size: 2.5em;">Menu</h3><br>
+  <div class="row" style="margin-top: 3%;">
+    <div class="col-md-4">
+      <a href="veg-menu.pdf" target="_blank"><img src="veg.jpg" class="img-responsive" width="100%" height="100%" alt="Image"></a>
+      <p>Veg-Menu</p>
+    </div>
+    <div class="col-md-4"> 
+      <a href="non-veg menu.pdf" target="_blank"><img src="nonveg.jpg" class="img-responsive" width="100%" height="100%" alt="Image"></a>
+      <p>Non-Veg Menu</p>    
+    </div>
+        <div class="col-md-4"> 
+      <img src="biryani.jpg" class="img-responsive" width="100%" height="100%" alt="Image">
+      <p>Biriyani Special @300</p>    
+    </div>
+  </div>
+</div><br>
+
+<!--- contact section-->
+<div class="container" id="contact">
+<div class="col-md-12">
+                  <h2 class="text-center"><b>Get In Touch</b></h2>
+                  <p class="text-center">Contact us using the form below.</p>
+                  <form action="https://formspree.io/pradoshchakra10@gmail.com" method="post" class="probootstrap-form">
+                    <div class="form-group">
+                      <label for="name">Full Name</label>
+                      <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="subject">Contact No</label>
+                      <input type="contact" class="form-control" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea cols="30" rows="5" class="form-control" id="message" name="message"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Send Message">
+                    </div>
+                  </form>
+  </div>
+</div>
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
